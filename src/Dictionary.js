@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -15,9 +16,15 @@ import "./Dictionary.css";
 
 export default function Dictionary() {
   let [word, setWord] = useState("");
+
+  function handleResponse(response) {
+    console.log(response.data[0]);
+  }
+
   function search(event) {
     event.preventDefault();
-    alert(`searching for ${word}`);
+    const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
+    axios.get(apiUrl).then(handleResponse);
   }
 
   function handleWordChange(event) {
