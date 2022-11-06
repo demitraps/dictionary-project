@@ -1,0 +1,16 @@
+.Signature {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.Signature a {
+  text-decoration: none;
+  color: rgb(172, 172, 172);
+}
+
+.Signature a:hover {
+  color: #fff;
+}
