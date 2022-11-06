@@ -1,0 +1,107 @@
+.Definitions h2 {
+  font-size: 90px;
+  padding-top: 70px;
+  padding-left: 40px;
+}
+
+.Definitions .phonetic {
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.Definitions .phonetic button {
+  background-color: #141414;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 60px 8px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.Definitions .phonetic button:hover {
+  background-color: #292828;
+}
+
+@media (max-width: 768px) {
+  .Definitions h2 {
+    font-size: 65px;
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  .Definitions .phonetic {
+    margin-left: 38px;
+    margin-top: 25px;
+  }
+
+  .Definitions .phonetic button {
+    font-size: 13px;
+    padding: 7px 50px 7px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Definitions h2 {
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 25px;
+  }
+  .Definitions .phonetic {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .Definitions .phonetic button {
+    font-size: 11px;
+    padding: 6px 40px 5px 20px;
+  }
+}
+
+@media (max-width: 367px) {
+  .Definitions h2 {
+    font-size: 33px;
+    padding-top: 30px;
+    padding-left: 22px;
+  }
+  .Definitions .phonetic {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .Definitions .phonetic button {
+    font-size: 9px;
+    padding: 4px 30px 4px 10px;
+  }
+}
+
+@media (max-width: 289px) {
+  .Definitions h2 {
+    font-size: 28px;
+    padding-top: 25px;
+    padding-left: 8px;
+  }
+  .Definitions .phonetic {
+    margin-left: 12px;
+    margin-top: 1px;
+  }
+
+  .Definitions .phonetic button {
+    font-size: 7px;
+    padding: 2px 20px 2px 8px;
+  }
+}
+@media (max-width: 236px) {
+  .Definitions h2 {
+    font-size: 24px;
+    padding-left: 6px;
+  }
+  .Definitions .phonetic {
+    margin-left: 8px;
+    margin-top: 1px;
+  }
+
+  .Definitions .phonetic button {
+    font-size: 7px;
+    padding: 2px 20px 2px 8px;
+  }
+}

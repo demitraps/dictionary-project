@@ -1,17 +1,120 @@
-.Dictionary .navigation {
-  color: white !important;
-}
-
-.Dictionary .navbar {
-  background-color: #141414 !important;
-}
-
-.Dictionary h2 {
-  font-size: 90px;
-  padding-top: 70px;
+.Dictionary header form {
+  padding-top: 20px;
   padding-left: 40px;
 }
 
-.Dictionary .pronunciation {
-  font-size: 13px;
+.Dictionary header form input {
+  padding: 6px 90px 6px 20px;
+  color: #141414;
+  border: none;
+  border-radius: 5px;
+}
+
+.Dictionary .light-switch {
+  margin-top: 25px;
+  margin-right: 40px;
+}
+
+.Dictionary .light-switch button {
+  border: none;
+}
+
+.Dictionary .lightmode {
+  padding: 6px 10px 6px 10px;
+  border-radius: 7px 0px 0px 7px;
+}
+
+.Dictionary .darkmode {
+  padding: 5px 10px 5px 10px;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.Dictionary .on {
+  background-color: #fff;
+  color: #141414;
+}
+.Dictionary .off {
+  background-color: #000;
+  color: #fff;
+}
+
+.Dictionary .off:hover {
+  background-color: #292828;
+}
+
+@media (max-width: 768px) {
+  .Dictionary header form {
+    padding-left: 20px;
+  }
+  .Dictionary .light-switch {
+    margin-right: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Dictionary header form input {
+    padding: 6px 40px 6px 15px;
+  }
+
+  .Dictionary .light-switch {
+    margin-right: 10px;
+  }
+  .Dictionary .lightmode {
+    padding: 4px 8px 4px 8px;
+    border-radius: 7px 0px 0px 7px;
+  }
+
+  .Dictionary .darkmode {
+    padding: 4px 8px 4px 8px;
+    border-radius: 0px 7px 7px 0px;
+  }
+}
+
+@media (max-width: 367px) {
+  .Dictionary header form input {
+    padding: 4px 8px 4px 8px;
+    font-size: 13px;
+  }
+
+  .Dictionary .light-switch {
+    margin-top: 20px;
+    margin-right: 15px;
+  }
+
+  .Dictionary .light-switch button {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 289px) {
+  .Dictionary header form {
+    padding-left: 6px;
+    padding-top: 15px;
+  }
+  .Dictionary header form input {
+    padding: 4px 5px 4px 5px;
+    font-size: 11px;
+  }
+  .Dictionary .light-switch {
+    margin-top: 20px;
+    margin-right: 6px;
+  }
+  .Dictionary .light-switch button {
+    font-size: 9px;
+  }
+}
+@media (max-width: 236px) {
+  .Dictionary header form {
+    padding-left: 2px;
+  }
+  .Dictionary header form input {
+    padding: 4px 1px 4px 4px;
+    font-size: 9px;
+  }
+  .Dictionary .light-switch {
+    margin-right: 2px;
+  }
+  .Dictionary .light-switch button {
+    font-size: 7px;
+  }
 }
