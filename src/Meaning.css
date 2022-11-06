@@ -1,0 +1,52 @@
+.Meaning h3 {
+  margin: 40px 1200px 10px 50px;
+  padding: 8px 30px;
+  border-radius: 2px;
+  background-color: #1e67d3;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.Meaning .search-results {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 1px 40px 5px 50px;
+  padding: 40px;
+}
+
+.Meaning .search-results .definition {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 60px;
+}
+
+.Meaning .search-results .title {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.Meaning .search-results .description {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.Meaning .search-results .example {
+  padding-left: 50px;
+}
+
+.Meaning .search-results .example .text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.8;
+}
+.Meaning .search-results .example .no-text {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.6;
+}
