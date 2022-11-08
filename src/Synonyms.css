@@ -1,6 +1,6 @@
 .Synonyms {
   padding-top: 20px;
-  padding: 20px 50px 0px 50px;
+  padding: 20px 50px;
 }
 
 .Synonyms .title-mini {
@@ -10,7 +10,7 @@
 }
 
 .Synonyms .synonym-word {
-  font-size: 10px;
+  font-size: 11px;
   color: #1e67d3;
   padding-right: 10px;
 }

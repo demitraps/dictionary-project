@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <Dictionary defaultWord="sunset" />
+        <Dictionary defaultWord="collect" />
         <Signature />
       </div>
     </div>
