@@ -1,0 +1,77 @@
+.Phonetics {
+  margin-left: 50px;
+  margin-top: 28px;
+}
+
+.Phonetics button {
+  background-color: #141414;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 60px 8px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  transition: all 150ms ease-in-out;
+}
+
+.Phonetics button:hover {
+  background-color: #292828;
+}
+
+@media (max-width: 768px) {
+  .Phonetics {
+    margin-left: 38px;
+    margin-top: 25px;
+  }
+
+  .Phonetics button {
+    font-size: 13px;
+    padding: 7px 50px 7px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Phonetics {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+
+  .Phonetics button {
+    font-size: 11px;
+    padding: 6px 40px 5px 20px;
+  }
+}
+
+@media (max-width: 367px) {
+  .Phonetics {
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+
+  .Phonetics button {
+    font-size: 9px;
+    padding: 4px 30px 4px 10px;
+  }
+}
+
+@media (max-width: 289px) {
+  .Phonetics {
+    margin-left: 12px;
+    margin-top: 1px;
+  }
+
+  .Phonetics button {
+    font-size: 7px;
+    padding: 2px 20px 2px 8px;
+  }
+}
+@media (max-width: 236px) {
+  .Phonetics {
+    margin-left: 8px;
+    margin-top: 1px;
+  }
+
+  .Phonetics button {
+    font-size: 7px;
+    padding: 2px 20px 2px 8px;
+  }
+}

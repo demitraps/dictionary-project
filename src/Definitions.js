@@ -1,25 +1,18 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlay } from "@fortawesome/free-solid-svg-icons";
 import "./Definitions.css";
 import Meaning from "./Meaning";
+import Phonetics from "./Phonetics";
 
 export default function Definitions(props) {
-  console.log(props.results);
-
   if (props.results) {
     return (
       <div className="Definitions">
         <div>
           <h2>{props.results.word}</h2>
-          <div className="phonetic">
-            <button>
-              <span>
-                <FontAwesomeIcon icon={faCirclePlay} />
-              </span>{" "}
-              <span className="ps-3">/ˌkɒntɹəˈdɪkʃən/</span>
-            </button>
-          </div>
+
+          {props.results.phonetics.map(function (phonetic, index) {
+            return <Phonetics key={index} phonetic={phonetic} />;
+          })}
         </div>
         {props.results.meanings.map(function (meaning, index) {
           return (

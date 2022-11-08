@@ -5,52 +5,66 @@ import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 import "./Dictionary.css";
 import Definitions from "./Definitions";
 
-export default function Dictionary() {
-  let [word, setWord] = useState("");
+export default function Dictionary(props) {
+  let [word, setWord] = useState(props.defaultWord);
   let [results, setResults] = useState(null);
+  let [readyStatus, setReadyStatus] = useState(false);
 
   function handleResponse(response) {
     setResults(response.data[0]);
-    //console.log(response.data[0].meanings[0].definitions[0].definition);
   }
 
-  function search(event) {
-    event.preventDefault();
+  function search() {
     // documentation: https://dictionaryapi.dev/
     const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
     axios.get(apiUrl).then(handleResponse);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
   }
 
   function handleWordChange(event) {
     setWord(event.target.value);
   }
 
-  return (
-    <div className="Dictionary">
-      <header className="navigation mt-1">
-        <div className="row">
-          <div className="col">
-            <form onSubmit={search}>
-              <input
-                type="search"
-                placeholder="Search"
-                onChange={handleWordChange}
-              />
-            </form>
+  function load() {
+    setReadyStatus(true);
+    search();
+  }
+
+  if (readyStatus) {
+    return (
+      <div className="Dictionary">
+        <header className="navigation mt-1">
+          <div className="row">
+            <div className="col">
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="search"
+                  placeholder="Search"
+                  onChange={handleWordChange}
+                />
+              </form>
+            </div>
+            <div className="col light-switch d-flex justify-content-end">
+              <button className="lightmode off">
+                <FontAwesomeIcon icon={faLightbulb} />
+              </button>
+              <button className="darkmode on">
+                <FontAwesomeIcon icon={faMoon} />
+              </button>
+            </div>
           </div>
-          <div className="col light-switch d-flex justify-content-end">
-            <button className="lightmode off">
-              <FontAwesomeIcon icon={faLightbulb} />
-            </button>
-            <button className="darkmode on">
-              <FontAwesomeIcon icon={faMoon} />
-            </button>
-          </div>
+        </header>
+        <div>
+          <Definitions results={results} />
         </div>
-      </header>
-      <div>
-        <Definitions results={results} />
       </div>
-    </div>
-  );
+    );
+  } else {
+    load();
+    return <div>Loading...</div>;
+  }
 }

@@ -17,6 +17,7 @@
 
 .Dictionary .light-switch button {
   border: none;
+  transition: all 150ms ease-in-out;
 }
 
 .Dictionary .lightmode {
