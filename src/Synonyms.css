@@ -1,5 +1,4 @@
 .Synonyms {
-  padding-top: 20px;
   padding: 20px 50px;
 }
 
@@ -13,4 +12,63 @@
   font-size: 11px;
   color: #1e67d3;
   padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .Synonyms {
+    padding: 8px 0px 15px 5px;
+  }
+
+  .Synonyms .title-mini {
+    font-size: 12px;
+  }
+
+  .Synonyms .synonym-word {
+    font-size: 10px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Synonyms {
+    padding: 5px 0px 35px 2px;
+  }
+
+  .Synonyms .title-mini {
+    font-size: 10px;
+  }
+
+  .Synonyms .synonym-word {
+    font-size: 8px;
+    padding-right: 18px;
+  }
+}
+@media (max-width: 367px) {
+  .Synonyms {
+    padding: 5px 0px 35px 2px;
+  }
+
+  .Synonyms .title-mini {
+    font-size: 8px;
+  }
+
+  .Synonyms .synonym-word {
+    font-size: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (max-width: 289px) {
+  .Synonyms {
+    padding: 3px 0px 28px 1px;
+  }
+
+  .Synonyms .title-mini {
+    font-size: 6px;
+  }
+
+  .Synonyms .synonym-word {
+    font-size: 7px;
+    padding-right: 5px;
+  }
 }

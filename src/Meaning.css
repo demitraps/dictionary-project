@@ -10,13 +10,13 @@
 }
 
 .Meaning .search-results {
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid lightslategrey;
   margin: 1px 40px 5px 50px;
   padding: 40px;
 }
 
 .Meaning .search-results .definition {
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid lightslategrey;
   padding-right: 60px;
 }
 
@@ -50,4 +50,151 @@
   font-weight: 300;
   font-style: italic;
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .Meaning h3 {
+    width: 150px;
+    margin: 10px 0px 10px 35px;
+    padding: 8px 22px;
+    font-size: 13px;
+  }
+
+  .Meaning .search-results {
+    margin: 1px 28px 5px 35px;
+    padding: 35px;
+  }
+
+  .Meaning .search-results .definition {
+    padding-right: 50px;
+  }
+
+  .Meaning .search-results .title {
+    font-size: 11px;
+  }
+
+  .Meaning .search-results .description {
+    font-size: 14px;
+  }
+
+  .Meaning .search-results .example {
+    padding-left: 40px;
+  }
+
+  .Meaning .search-results .example .text {
+    font-size: 14px;
+  }
+  .Meaning .search-results .example .no-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Meaning h3 {
+    width: 130px;
+    margin: 8px 0px 10px 20px;
+    padding: 8px 18px;
+    font-size: 11px;
+  }
+
+  .Meaning .search-results {
+    margin: 1px 15px 5px 20px;
+    padding: 25px 20px 20px 20px;
+  }
+
+  .Meaning .search-results .definition {
+    padding-right: 30px;
+  }
+
+  .Meaning .search-results .title {
+    font-size: 9px;
+  }
+
+  .Meaning .search-results .description {
+    font-size: 11px;
+  }
+
+  .Meaning .search-results .example {
+    padding-left: 20px;
+  }
+
+  .Meaning .search-results .example .text {
+    font-size: 10px;
+  }
+  .Meaning .search-results .example .no-text {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 367px) {
+  .Meaning h3 {
+    width: 110px;
+    margin: 4px 0px 8px 18px;
+    padding: 6px 16px;
+    font-size: 9px;
+  }
+
+  .Meaning .search-results {
+    margin: 1px 10px 5px 18px;
+    padding: 20px 15px 15px 15px;
+  }
+
+  .Meaning .search-results .definition {
+    padding-right: 20px;
+  }
+
+  .Meaning .search-results .title {
+    font-size: 8px;
+  }
+
+  .Meaning .search-results .description {
+    font-size: 9px;
+  }
+
+  .Meaning .search-results .example {
+    padding-left: 15px;
+  }
+
+  .Meaning .search-results .example .text {
+    font-size: 9px;
+  }
+  .Meaning .search-results .example .no-text {
+    font-size: 8px;
+  }
+}
+@media (max-width: 289px) {
+  .Meaning h3 {
+    width: 90px;
+    margin: 0px 0px 5px 8px;
+    padding: 5px 10px;
+    font-size: 8px;
+  }
+
+  .Meaning .search-results {
+    margin: 1px 5px 3px 8px;
+    padding: 15px 8px 10px 10px;
+  }
+
+  .Meaning .search-results .definition {
+    padding-right: 10px;
+  }
+
+  .Meaning .search-results .title {
+    font-size: 6px;
+  }
+
+  .Meaning .search-results .description {
+    font-size: 8px;
+  }
+
+  .Meaning .search-results .example {
+    padding-left: 12px;
+  }
+
+  .Meaning .search-results .example .text {
+    font-size: 7px;
+  }
+  .Meaning .search-results .example .no-text {
+    font-size: 6px;
+  }
 }

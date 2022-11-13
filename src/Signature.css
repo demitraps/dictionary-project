@@ -14,3 +14,14 @@
 .Signature a:hover {
   color: #fff;
 }
+
+@media (max-width: 576px) {
+  .Signature {
+    font-size: 10px;
+  }
+}
+@media (max-width: 289px) {
+  .Signature {
+    font-size: 8px;
+  }
+}

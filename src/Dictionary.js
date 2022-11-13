@@ -50,6 +50,19 @@ export default function Dictionary(props) {
     search();
   }
 
+  function toggleToDark(event) {
+    event.preventDefault();
+
+    document.body.classList.remove(`light`);
+    document.body.classList.add(`dark`);
+  }
+
+  function toggleToLight(event) {
+    event.preventDefault();
+    document.body.classList.remove(`dark`);
+    document.body.classList.add(`light`);
+  }
+
   if (readyStatus) {
     return (
       <div className="Dictionary">
@@ -65,10 +78,10 @@ export default function Dictionary(props) {
               </form>
             </div>
             <div className="col light-switch d-flex justify-content-end">
-              <button className="lightmode off">
+              <button className="lightmode on" onClick={toggleToLight}>
                 <FontAwesomeIcon icon={faLightbulb} />
               </button>
-              <button className="darkmode on">
+              <button className="darkmode off" onClick={toggleToDark}>
                 <FontAwesomeIcon icon={faMoon} />
               </button>
             </div>

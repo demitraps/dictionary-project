@@ -10,3 +10,48 @@
 .Photos .Photos .arrangement {
   padding-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .Photos {
+    margin: 40px 25px 5px 35px;
+  }
+
+  .Photos button {
+    font-size: 14px;
+  }
+
+  .Photos img {
+    border-radius: 4px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .Photos {
+    margin: 30px 13px 1px 20px;
+  }
+
+  .Photos button {
+    font-size: 14px;
+  }
+
+  .Photos img {
+    border-radius: 4px;
+    padding-bottom: 2px;
+  }
+}
+
+@media (max-width: 367px) {
+  .Photos {
+    margin: 20px 8px 1px 15px;
+  }
+
+  .Photos button {
+    font-size: 12px;
+  }
+
+  .Photos img {
+    border-radius: 4px;
+    padding-bottom: 1px;
+  }
+}
